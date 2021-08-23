@@ -5,8 +5,7 @@ Deno.js package for the `ip` command on GNU/Linux
 
 * List all network interfaces info:
 ```ts
-import { ipList } from "https://raw.githubusercontent.com/creeperkafasi/linux-ip/master/mod.ts";
-// deno.land/x link coming soon ^
+import { ipList } from "https://deno.land/x/linux_ip@v1.0.0/mod.ts";
 
 console.log(await ipList())
 ```
@@ -20,8 +19,8 @@ Sample output:
 ```
 
 * Run `ip` with custom args
-```
-import { ipCommand } from "https://raw.githubusercontent.com/creeperkafasi/linux-ip/master/mod.ts";
+```ts
+import { ipCommand } from "https://deno.land/x/linux_ip@v1.0.0/master/mod.ts";
 
 console.log(await ipCommand(["route","list"])) // Shows the routing table
 ```
